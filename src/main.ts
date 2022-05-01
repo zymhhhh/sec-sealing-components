@@ -10,6 +10,7 @@ import * as Icons from '@element-plus/icons-vue'
 const app = createApp(App)
 // global register icons loading needs time
 for(let i in Icons) {
+
     app.component(`el-icon-${toLine(i)}`,(Icons as any)[i])
 }
 app.use(router).use(ELementPlus)

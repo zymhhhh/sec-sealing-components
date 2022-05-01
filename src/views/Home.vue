@@ -1,6 +1,10 @@
 <template>
     <div>
         <el-button>button</el-button>
+        <el-icon-loading class="is-loading">
+
+        </el-icon-loading>
+
     </div>
 </template>
 
