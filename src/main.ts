@@ -6,12 +6,11 @@ import router from './router/index'
 import ELementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import * as Icons from '@element-plus/icons-vue'
-
+import mUI from './components'
 const app = createApp(App)
 // global register icons loading needs time
 for(let i in Icons) {
-
     app.component(`el-icon-${toLine(i)}`,(Icons as any)[i])
 }
-app.use(router).use(ELementPlus)
+app.use(router).use(ELementPlus).use(mUI)
 app.mount('#app')
