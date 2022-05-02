@@ -1,0 +1,10 @@
+// change element component styles
+// identify a style space
+// first import it in App.vue
+// edit it in specified element
+.s-icon-selector-dialog-body-height {
+    .el-dialog__body {
+        height: 500px;
+        overflow: scroll;
+    }
+}
