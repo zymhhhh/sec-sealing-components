@@ -1,21 +1,89 @@
 <template>
- <el-menu :collapse="collapse" default-active="2" class="el-menu-vertical-demo">
-                        <el-menu-item index="1">
-                            <i class='el-icon'>
-                                <el-icon-menu />
-                            </i>
-                            <span>Navigator Two</span>
-                        </el-menu-item>
-                    </el-menu>
+ <s-menu :collapse="collapse" :data = "data" router :defaultActive="$route.path"></s-menu>
 </template>
 <script lang="ts" setup>
 let props = defineProps<{
     collapse: boolean
 }>()
+let data = [
+    {
+        icon:'HomeFilled',
+        name:"home",
+        index: '/'
+    },
+    {
+        icon:'Check',
+        name:"iconSelector",
+        index: '/iconSelector'
+    },
+    {
+        icon:'Location',
+        name:"areaSelector",
+        index: '/areaselector'
+    },
+    {
+        icon:'bell',
+        name:"Notification",
+        index: '/notification'
+    },
+    {
+        icon:'trendcharts',
+        name:"trend",
+        index: '/trend'
+    },
+    {
+        icon:'timer',
+        name:"chooseTime",
+        index: '/chooseTime'
+    },
+    {
+        icon:'maplocation',
+        name:"citySelector",
+        index: '/cityselector'
+    },
+    {
+        icon:'calendar',
+        name:"calendar",
+        index: '/calendar'
+    },
+    {
+        icon:'loading',
+        name:"progress",
+        index: '/progress'
+    },
+
+    {
+        icon:'setting',
+        name:"form",
+        index: '/form'
+    },
+    {
+        icon:'grid',
+        name:"table",
+        index: '/table'
+    },
+    {
+        icon:'menu',
+        name:"menu",
+        index: '/menu'
+    },
+    {
+        icon:'',
+        name:"home",
+        index: '/'
+    },
+    {
+        icon:'',
+        name:"home",
+        index: '/'
+    },
+    {
+        icon:'',
+        name:"home",
+        index: '/'
+    },
+]
 </script>
 <style lang="scss" scoped>
-.el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 200px;
-  min-height: 400px;
-}
+
 </style>

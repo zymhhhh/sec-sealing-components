@@ -35,7 +35,7 @@ let props = defineProps<{
 }>()
 let emits = defineEmits(['update:visible'])
 let handleClick = () => {
-
+    //console.log(props.visible)
     emits('update:visible', !props.visible)
 }
 let dialogVisible = ref<boolean>(props.visible)

@@ -6,7 +6,7 @@
 <style lang='scss' scoped>
 </style>
 <script lang='ts' setup>
-//import iconSelector from '../../components/iconSelector/src/index.vue' 
+import iconSelector from '../../components/iconSelector/src/index.vue' 
 import { ref } from 'vue'
 let visible = ref<boolean>(false)
 </script>
